@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Саша Олійник — Людина. Легенда.</title>
+<meta name="description" content="Офіційний сайт найспокійнішої, найсильнішої і найвдумливішої людини планети. Літав у космос, пірнав на дно океану, врятував купу людей, котів і хом'ячків.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Саша Олійник — Людина. Легенда. Рятівник галактики.">
+<meta property="og:description" content="Літав у космос. Пірнав на дно океану. Врятував Грету Тунберг. Натисни «Посміхнути Саню».">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#0e0a2b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16122e; --navy:#0e0a2b; --navy2:#1d1650; --cream:#fff6e6; --paper:#fffdf8;
+    --gold:#ffc83d; --pink:#ff4f8b; --blue:#2b6cff; --mint:#29c48a; --muted:#6b6788;
+    --radius:22px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
+  h1,h2,h3{font-family:Unbounded,Manrope,sans-serif;line-height:1.1;margin:0}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  section{padding:88px 0}
+  .eyebrow{display:inline-block;font:700 12px/1 Manrope;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);margin-bottom:14px}
+  .h2{font-size:clamp(28px,4.4vw,46px);font-weight:900;margin-bottom:14px}
+  .lead{color:var(--muted);max-width:640px;margin:0 0 40px}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;color:#fff;padding:40px 0 70px;overflow:hidden;
+    background:
+      radial-gradient(1px 1px at 12% 18%,#fff 50%,transparent 51%),
+      radial-gradient(1.5px 1.5px at 72% 12%,#fff 50%,transparent 51%),
+      radial-gradient(1px 1px at 38% 72%,#fff 50%,transparent 51%),
+      radial-gradient(1.5px 1.5px at 88% 64%,#fff 50%,transparent 51%),
+      radial-gradient(1px 1px at 22% 88%,#fff 50%,transparent 51%),
+      radial-gradient(1px 1px at 58% 32%,#fff 50%,transparent 51%),
+      radial-gradient(1.5px 1.5px at 6% 52%,#fff 50%,transparent 51%),
+      radial-gradient(1px 1px at 94% 30%,#fff 50%,transparent 51%),
+      radial-gradient(900px 500px at 75% 40%,#3a2a9a 0%,transparent 60%),
+      linear-gradient(180deg,var(--navy),var(--navy2));}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:48px}
+  .logo{font:900 15px/1 Unbounded;letter-spacing:.04em}
+  .logo span{color:var(--gold)}
+  .verified{font-size:13px;padding:8px 14px;border:1px solid rgba(255,255,255,.25);border-radius:99px;white-space:nowrap}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,200,61,.14);color:var(--gold);border:1px solid rgba(255,200,61,.4);
+    padding:8px 14px;border-radius:99px;font-weight:800;font-size:13px;margin-bottom:22px}
+  .hero h1{font-size:clamp(44px,8vw,96px);font-weight:900;letter-spacing:-.02em}
+  .hero h1 em{font-style:normal;color:var(--gold);display:block}
+  .hero .sub{font:700 clamp(17px,2.2vw,22px)/1.35 Unbounded;margin:20px 0 14px;color:#e9e6ff}
+  .hero .tag{color:#bcb6e6;max-width:520px;margin:0 0 30px}
+  .btns{display:flex;flex-wrap:wrap;gap:14px}
+  .btn{appearance:none;border:0;cursor:pointer;font:800 17px/1 Manrope;padding:18px 26px;border-radius:99px;display:inline-flex;align-items:center;gap:10px;
+    transition:transform .15s ease, box-shadow .2s ease; -webkit-tap-highlight-color:transparent}
+  .btn:active{transform:scale(.95)}
+  .btn-smile{background:var(--gold);color:var(--ink);box-shadow:0 10px 0 #c99415,0 20px 40px rgba(255,200,61,.35);font-size:19px;padding:20px 30px}
+  .btn-smile:hover{transform:translateY(-2px)}
+  .btn-love{background:var(--pink);color:#fff;box-shadow:0 10px 0 #b8245a,0 20px 40px rgba(255,79,139,.3)}
+  .btn-love:hover{transform:translateY(-2px)}
+  .counters{margin-top:26px;font-size:14px;color:#bcb6e6;display:flex;flex-wrap:wrap;gap:6px 22px}
+  .counters b{color:#fff;font-variant-numeric:tabular-nums}
+
+  .portrait{position:relative;justify-self:center;width:min(420px,82vw);aspect-ratio:1}
+  .rays{position:absolute;inset:-22%;border-radius:50%;
+    background:repeating-conic-gradient(from 0deg,rgba(255,200,61,.28) 0 6deg,transparent 6deg 18deg);
+    -webkit-mask:radial-gradient(circle,#000 30%,transparent 70%);mask:radial-gradient(circle,#000 30%,transparent 70%);
+    animation:spin 40s linear infinite}
+  .portrait.happy .rays{animation-duration:3s;background:repeating-conic-gradient(from 0deg,rgba(255,200,61,.55) 0 6deg,transparent 6deg 18deg)}
+  .halo{position:absolute;left:50%;top:-6%;width:46%;height:12%;transform:translateX(-50%);border:6px solid var(--gold);border-radius:50%;
+    box-shadow:0 0 24px var(--gold),inset 0 0 12px var(--gold);animation:float 3s ease-in-out infinite;z-index:3}
+  .photo{position:absolute;inset:0;border-radius:50%;overflow:hidden;border:8px solid var(--gold);box-shadow:0 30px 80px rgba(0,0,0,.5);z-index:2;transition:filter .4s}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .portrait.happy .photo{animation:boing .7s cubic-bezier(.3,1.6,.5,1)}
+  .stamp{position:absolute;right:-4%;bottom:6%;z-index:4;background:var(--pink);color:#fff;font:900 13px/1.1 Unbounded;text-align:center;
+    padding:16px 12px;border-radius:50%;width:104px;height:104px;display:grid;place-items:center;transform:rotate(-14deg);
+    box-shadow:0 10px 30px rgba(255,79,139,.5);border:3px dashed rgba(255,255,255,.6)}
+  .bubble{position:absolute;left:50%;bottom:-2%;z-index:5;transform:translate(-50%,100%) scale(.6);opacity:0;pointer-events:none;
+    background:#fff;color:var(--ink);font-weight:800;font-size:15px;line-height:1.35;padding:12px 16px;border-radius:16px;width:max-content;max-width:300px;text-align:center;
+    box-shadow:0 14px 40px rgba(0,0,0,.35);transition:all .3s cubic-bezier(.3,1.6,.5,1)}
+  .bubble::after{content:"";position:absolute;left:50%;top:-8px;transform:translateX(-50%) rotate(45deg);width:16px;height:16px;background:#fff}
+  .bubble.show{opacity:1;transform:translate(-50%,105%) scale(1)}
+
+  /* ---------- TICKER ---------- */
+  .ticker{background:var(--gold);color:var(--ink);overflow:hidden;white-space:nowrap;border-block:3px solid var(--ink);font:800 15px/1 Manrope;padding:14px 0}
+  .ticker-track{display:inline-flex;gap:48px;animation:ticker 38s linear infinite;padding-left:48px}
+  .ticker-track span::before{content:"⚡ ";}
+
+  /* ---------- STATS ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .stat{background:var(--paper);border:2px solid var(--ink);border-radius:var(--radius);padding:24px 22px;box-shadow:6px 6px 0 var(--ink)}
+  .stat .num{font:900 clamp(30px,4vw,42px)/1 Unbounded;color:var(--blue);font-variant-numeric:tabular-nums}
+  .stat:nth-child(2) .num{color:var(--pink)} .stat:nth-child(3) .num{color:var(--mint)} .stat:nth-child(4) .num{color:#ff8a3d}
+  .stat p{margin:10px 0 0;font-size:15px;color:var(--muted)}
+
+  /* ---------- ACHIEVEMENTS ---------- */
+  .ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .ach{background:var(--paper);border-radius:var(--radius);overflow:hidden;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column;
+    transition:transform .2s}
+  .ach:hover{transform:translate(-2px,-2px) rotate(-.4deg);box-shadow:9px 9px 0 var(--ink)}
+  .ach svg{width:100%;height:auto;display:block;border-bottom:2px solid var(--ink)}
+  .ach-body{padding:22px 24px 26px}
+  .ach .lvl{font:800 12px/1 Manrope;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
+  .ach h3{font-size:21px;font-weight:700;margin:10px 0 10px}
+  .ach p{margin:0;color:#46415f}
+
+  /* ---------- SUITS ---------- */
+  .suits{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .suit{background:var(--paper);border-radius:var(--radius);overflow:hidden;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transition:transform .2s}
+  .suit:hover{transform:translate(-2px,-2px) rotate(.5deg);box-shadow:9px 9px 0 var(--ink)}
+  .suit svg{width:100%;height:auto;display:block;border-bottom:2px solid var(--ink)}
+  .suit:hover .head{animation:nod .6s ease}
+  .head{transform-origin:150px 180px}
+  .suit-body{padding:18px 22px 24px}
+  .suit h3{font-size:19px;margin-bottom:8px}
+  .suit p{margin:0;color:#46415f;font-size:15px}
+  @keyframes nod{30%{transform:rotate(-6deg)}70%{transform:rotate(5deg)}}
+
+  /* ---------- POWERS ---------- */
+  .dark{background:var(--navy);color:#fff}
+  .dark .lead{color:#bcb6e6}
+  .powers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .power{background:var(--navy2);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px 24px}
+  .power .ico{font-size:40px}
+  .power h3{font-size:22px;margin:12px 0 4px}
+  .meter{height:14px;border-radius:99px;background:rgba(255,255,255,.1);margin:16px 0 6px;overflow:visible;position:relative}
+  .meter i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--pink));transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+  .in .meter i{width:100%}
+  .meter-lbl{display:flex;justify-content:space-between;font-size:13px;color:#bcb6e6}
+  .meter-lbl b{color:var(--gold);font-family:Unbounded}
+  .in .meter-lbl b{animation:wiggle .5s ease 1.6s 3}
+  .power p{color:#d8d4f5;font-size:15px;margin:14px 0 0}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .shot{background:#fff;padding:12px 12px 16px;border-radius:6px;box-shadow:0 12px 30px rgba(22,18,46,.18);transform:rotate(var(--r,0deg));transition:transform .25s}
+  .shot:hover{transform:rotate(0) scale(1.03);z-index:2}
+  .shot img{aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:3px;background:#eee}
+  .shot figcaption{font-size:14px;line-height:1.45;margin-top:12px;color:#46415f}
+  .shot figcaption b{display:block;color:var(--ink);font-family:Unbounded;font-size:14px;margin-bottom:4px}
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{position:relative;max-width:760px}
+  .timeline::before{content:"";position:absolute;left:19px;top:6px;bottom:6px;width:3px;background:var(--ink);border-radius:3px}
+  .tl{position:relative;padding:0 0 30px 64px}
+  .tl::before{content:attr(data-i);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--gold);border:3px solid var(--ink);
+    display:grid;place-items:center;font-size:18px}
+  .tl h3{font-size:17px;margin-bottom:4px}
+  .tl p{margin:0;color:#46415f}
+
+  /* ---------- REVIEWS ---------- */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .review{background:var(--paper);border:2px solid var(--ink);border-radius:var(--radius);padding:24px;box-shadow:6px 6px 0 var(--ink)}
+  .review .stars{color:var(--gold);letter-spacing:2px;font-size:18px;-webkit-text-stroke:.6px var(--ink)}
+  .review blockquote{margin:12px 0 16px;font-weight:600;font-size:17px}
+  .review .who{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)}
+  .review .who span{font-size:30px}
+  .review .who b{display:block;color:var(--ink)}
+
+  /* ---------- FINAL ---------- */
+  .final{text-align:center}
+  .final .h2{max-width:760px;margin:0 auto 14px}
+  .final .lead{margin:0 auto 34px}
+  .final .btns{justify-content:center}
+  footer{padding:36px 0 50px;text-align:center;font-size:13px;color:#bcb6e6;background:var(--navy)}
+  footer p{margin:4px 0}
+
+  /* ---------- FX ---------- */
+  .fx{position:fixed;pointer-events:none;z-index:100;font-size:28px;left:0;top:0;will-change:transform,opacity}
+  .fx.heart{animation:heart 1.3s ease-out forwards}
+  .fx.rain{animation:rain linear forwards}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,140%);z-index:110;background:var(--ink);color:#fff;font-weight:700;
+    padding:14px 20px;border-radius:16px;max-width:calc(100% - 32px);width:max-content;text-align:center;box-shadow:0 14px 40px rgba(0,0,0,.35);transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
+  .toast.show{transform:translate(-50%,0)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes float{50%{transform:translateX(-50%) translateY(-8px)}}
+  @keyframes boing{0%{transform:scale(1)}30%{transform:scale(1.08) rotate(-3deg)}60%{transform:scale(.97) rotate(2deg)}100%{transform:scale(1)}}
+  @keyframes ticker{to{transform:translateX(-50%)}}
+  @keyframes wiggle{25%{transform:rotate(-8deg) scale(1.2)}75%{transform:rotate(8deg) scale(1.2)}}
+  @keyframes heart{0%{opacity:1;transform:translate(var(--x),var(--y)) scale(.4)}100%{opacity:0;transform:translate(calc(var(--x) + var(--dx)),calc(var(--y) - 220px)) scale(1.3) rotate(var(--rot))}}
+  @keyframes rain{0%{transform:translate(var(--x),-60px) rotate(0)}100%{transform:translate(var(--x),110vh) rotate(var(--rot))}}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:56px}
+    .portrait{order:-1;margin-top:40px;width:min(320px,72vw)}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .powers,.reviews{grid-template-columns:1fr}
+    .suits{grid-template-columns:repeat(2,1fr)}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:640px){
+    section{padding:64px 0}
+    .wrap{padding:0 16px}
+    .ach-grid{grid-template-columns:1fr}
+    .suits{grid-template-columns:1fr}
+    .verified{display:none}
+    .btn{width:100%;justify-content:center}
+    .stamp{width:84px;height:84px;font-size:11px;right:-2%}
+    .gallery{gap:14px}
+    .shot{padding:8px 8px 12px}
+    .shot figcaption{font-size:13px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+    .meter i{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<!-- Спільні SVG-символи для ілюстрацій -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cat" viewBox="0 0 60 60">
+    <path d="M10 26 L12 6 L24 18 Z M50 26 L48 6 L36 18 Z" fill="currentColor"/>
+    <circle cx="30" cy="34" r="22" fill="currentColor"/>
+    <ellipse cx="22" cy="32" rx="3" ry="4" fill="#16122e"/><ellipse cx="38" cy="32" rx="3" ry="4" fill="#16122e"/>
+    <path d="M27 40 L33 40 L30 43 Z" fill="#ff4f8b"/>
+    <path d="M30 43 Q27 47 24 45 M30 43 Q33 47 36 45" stroke="#16122e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M8 38 L20 40 M8 44 L20 43 M52 38 L40 40 M52 44 L40 43" stroke="#16122e" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+  <clipPath id="face" clipPathUnits="objectBoundingBox"><ellipse cx=".5" cy=".5" rx=".5" ry=".5"/></clipPath>
+</svg>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="logo">САНЯ<span>.</span>ЛЕГЕНДА</div>
+      <div class="verified">✔ Перевірено мамою і двома котами</div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <div class="badge">🏆 Людина року. Щороку. Без перерв</div>
+        <h1>Саша <em>Олійник</em></h1>
+        <p class="sub">Людина. Легенда. Рятівник галактики і всього, що в ній муркоче.</p>
+        <p class="tag">Спокійний, як Карпати о шостій ранку. Сильний, як бабусин борщ. Вдумливий, як кіт перед стрибком на шафу.</p>
+        <div class="btns">
+          <button class="btn btn-smile" data-smile>😊 Посміхнути Саню</button>
+          <button class="btn btn-love" data-love>❤️ Обожнюю Саню</button>
+        </div>
+        <div class="counters">
+          <div>Саня посміхнувся: <b data-count="smile">0</b> <span data-times="smile">разів</span></div>
+          <div>Ти обожнюєш Саню: <b data-count="love">0</b> <span data-times="love">разів</span></div>
+        </div>
+      </div>
+
+      <div class="portrait" id="portrait">
+        <div class="rays"></div>
+        <div class="halo"></div>
+        <div class="photo"><img src="img/hero.jpg" alt="Саша Олійник" width="640" height="640"></div>
+        <div class="stamp">100%<br>ГЕРОЙ</div>
+        <div class="bubble" id="bubble"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= TICKER ================= -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>ТЕРМІНОВО: Саня знову когось врятував</span>
+    <span>NASA просить автограф уже втретє</span>
+    <span>Коти Європи оголосили Саню почесним котом</span>
+    <span>Хом'ячки вийшли на мітинг «Саня — наш президент»</span>
+    <span>Маріанська западина зізналась, що Саня глибший</span>
+    <span>Синоптики: сьогодні спокійно, бо Саня поруч</span>
+    <span>ТЕРМІНОВО: Саня знову когось врятував</span>
+    <span>NASA просить автограф уже втретє</span>
+    <span>Коти Європи оголосили Саню почесним котом</span>
+    <span>Хом'ячки вийшли на мітинг «Саня — наш президент»</span>
+    <span>Маріанська западина зізналась, що Саня глибший</span>
+    <span>Синоптики: сьогодні спокійно, бо Саня поруч</span>
+  </div>
+</div>
+
+<!-- ================= STATS ================= -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Сухі цифри</span>
+    <h2 class="h2">Саня в цифрах</h2>
+    <p class="lead">Статистика неповна: більшість подвигів Саня робить тихо і нікому не розповідає. Ці ми дізнались від свідків.</p>
+    <div class="stats reveal">
+      <div class="stat"><div class="num" data-to="1487">0</div><p>врятованих людей (і ще 3 човни)</p></div>
+      <div class="stat"><div class="num" data-to="3">0</div><p>польоти в космос, один із них — щоб вимкнути праску</p></div>
+      <div class="stat"><div class="num" data-to="10994" data-suf=" м">0</div><p>глибина, на яку він пірнув за загубленою шкарпеткою</p></div>
+      <div class="stat"><div class="num" data-to="342">0</div><p>коти, які офіційно вважають його татом</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Зала слави</span>
+    <h2 class="h2">Нереальні досягнення</h2>
+    <p class="lead">Усе, що нижче, — чиста правда. Ну, майже. Принаймні Саня ніколи це не заперечував (бо він скромний і взагалі не знає про цей сайт).</p>
+
+    <div class="ach-grid">
+
+      <!-- 1. Космос -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Ракета в космосі і праска">
+          <rect width="400" height="220" fill="#1d1650"/>
+          <g fill="#fff"><circle cx="40" cy="30" r="1.5"/><circle cx="120" cy="60" r="1"/><circle cx="300" cy="25" r="1.8"/><circle cx="360" cy="90" r="1.2"/><circle cx="80" cy="170" r="1.4"/><circle cx="250" cy="190" r="1"/><circle cx="190" cy="40" r="1.2"/><circle cx="20" cy="110" r="1"/></g>
+          <circle cx="340" cy="190" r="70" fill="#ff8a3d"/><circle cx="315" cy="170" r="12" fill="#e06a22"/><circle cx="360" cy="205" r="8" fill="#e06a22"/>
+          <ellipse cx="340" cy="190" rx="110" ry="18" fill="none" stroke="#ffc83d" stroke-width="5" transform="rotate(-15 340 190)"/>
+          <g transform="translate(150 20) rotate(32 50 90)">
+            <path d="M50 0 C72 22 78 70 72 130 L28 130 C22 70 28 22 50 0Z" fill="#fff"/>
+            <circle cx="50" cy="55" r="14" fill="#2b6cff" stroke="#c9d6ff" stroke-width="5"/>
+            <path d="M28 100 L8 140 L28 130Z M72 100 L92 140 L72 130Z" fill="#ff4f8b"/>
+            <path d="M34 130 Q50 185 66 130Z" fill="#ffc83d"/><path d="M42 130 Q50 160 58 130Z" fill="#fff3c4"/>
+            <text x="50" y="98" font-family="Unbounded" font-weight="900" font-size="13" text-anchor="middle" fill="#16122e">САНЯ</text>
+          </g>
+          <g transform="translate(38 46) rotate(-18)">
+            <path d="M0 36 Q6 8 38 4 L60 4 L60 36Z" fill="#d9dde8" stroke="#16122e" stroke-width="2"/>
+            <path d="M20 4 Q22 -12 40 -12 L52 -12 L52 4" fill="none" stroke="#16122e" stroke-width="4"/>
+            <circle cx="48" cy="22" r="4" fill="#29c48a"/>
+          </g>
+          <text x="70" y="120" font-family="Manrope" font-weight="800" font-size="14" fill="#ffc83d">вимкнена ✔</text>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: космічний</span>
+          <h3>Літав у космос, щоб перевірити, чи вимкнув праску</h3>
+          <p>Праску вимкнув. Заодно полагодив Wi‑Fi на МКС, навчив астронавтів ліпити вареники і повернувся додому до вечері. NASA досі надсилає листівки на Різдво.</p>
+        </div>
+      </article>
+
+      <!-- 2. Океан -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Риба-вудильник на дні океану і шкарпетка">
+          <defs><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b6cff"/><stop offset="1" stop-color="#0a1040"/></linearGradient></defs>
+          <rect width="400" height="220" fill="url(#sea)"/>
+          <g fill="none" stroke="#bfe0ff" stroke-width="2" opacity=".7"><circle cx="60" cy="60" r="8"/><circle cx="74" cy="34" r="5"/><circle cx="66" cy="14" r="3"/><circle cx="330" cy="70" r="6"/><circle cx="342" cy="44" r="4"/></g>
+          <ellipse cx="200" cy="225" rx="260" ry="30" fill="#c9a35a"/>
+          <path d="M120 120 Q140 70 210 85 Q260 95 270 130 Q250 168 200 165 Q140 162 120 120Z" fill="#7b5cff"/>
+          <path d="M270 130 L310 105 L305 160Z" fill="#5a3ee0"/>
+          <circle cx="160" cy="112" r="12" fill="#fff"/><circle cx="157" cy="112" r="6" fill="#16122e"/>
+          <path d="M126 128 L134 138 L142 128 L150 138 L158 128 L166 138 L174 128" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M175 86 Q170 40 130 44" fill="none" stroke="#5a3ee0" stroke-width="4"/>
+          <circle cx="128" cy="44" r="10" fill="#ffc83d"/><circle cx="128" cy="44" r="22" fill="#ffc83d" opacity=".25"/>
+          <g transform="translate(300 170) rotate(12)">
+            <path d="M0 0 L22 0 L22 26 Q34 28 34 40 L8 42 Q0 40 0 30Z" fill="#ff4f8b" stroke="#16122e" stroke-width="2"/>
+            <rect x="0" y="6" width="22" height="5" fill="#fff"/>
+          </g>
+          <text x="200" y="40" font-family="Manrope" font-weight="800" font-size="13" fill="#bfe0ff" text-anchor="middle">–10 994 м</text>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: глибинний</span>
+          <h3>Пірнув на дно Маріанської западини без батискафа</h3>
+          <p>Шукав шкарпетку, яку загубив у 2014-му. Знайшов. Дорогою заспокоїв нервову рибу‑вудильника — тепер вона ходить до Сані на консультації і вже майже не кусається.</p>
+        </div>
+      </article>
+
+      <!-- 3. Рятувальник -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Рятувальний круг і здивований бобер">
+          <rect width="400" height="220" fill="#bfe6ff"/>
+          <circle cx="330" cy="50" r="26" fill="#ffc83d"/>
+          <path d="M0 120 Q50 100 100 120 T200 120 T300 120 T400 120 V220 H0Z" fill="#2b6cff"/>
+          <path d="M0 150 Q50 132 100 150 T200 150 T300 150 T400 150 V220 H0Z" fill="#1f55d6"/>
+          <g transform="translate(120 118)">
+            <circle r="44" fill="none" stroke="#ff4f8b" stroke-width="22"/>
+            <circle r="44" fill="none" stroke="#fff" stroke-width="22" stroke-dasharray="23 46" transform="rotate(10)"/>
+            <path d="M-50 -10 Q0 -60 50 -10" fill="none" stroke="#16122e" stroke-width="3" stroke-dasharray="6 6"/>
+          </g>
+          <g transform="translate(290 128)">
+            <circle cx="-18" cy="-24" r="8" fill="#6b4220"/><circle cx="18" cy="-24" r="8" fill="#6b4220"/>
+            <circle r="28" fill="#8b5a2b"/>
+            <circle cx="-10" cy="-6" r="7" fill="#fff"/><circle cx="10" cy="-6" r="7" fill="#fff"/>
+            <circle cx="-10" cy="-5" r="3.5" fill="#16122e"/><circle cx="10" cy="-5" r="3.5" fill="#16122e"/>
+            <ellipse cx="0" cy="8" rx="6" ry="4" fill="#16122e"/>
+            <rect x="-6" y="13" width="5" height="9" rx="1" fill="#fff"/><rect x="1" y="13" width="5" height="9" rx="1" fill="#fff"/>
+            <text x="22" y="-30" font-family="Unbounded" font-weight="900" font-size="22" fill="#16122e">!?</text>
+          </g>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: рятувальний</span>
+          <h3>Рятувальник року — чотирнадцять років поспіль</h3>
+          <p>Витягнув із річки 47 людей, 3 човни й одного дуже здивованого бобра, який, як з'ясувалось, і не тонув. Бобер не образився і тепер пише Сані листи. Дерев'яні.</p>
+        </div>
+      </article>
+
+      <!-- 4. Коти -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Троє щасливих котів">
+          <rect width="400" height="220" fill="#ffe2ec"/>
+          <g fill="#ff4f8b"><path d="M60 50 c-8-12-26-4-16 10 l16 14 16-14 c10-14-8-22-16-10z"/><path d="M340 40 c-6-9-20-3-12 8 l12 10 12-10 c8-11-6-17-12-8z"/><path d="M200 26 c-5-7-15-2-9 6 l9 8 9-8 c6-8-4-13-9-6z"/></g>
+          <use href="#cat" x="40" y="80" width="110" height="110" style="color:#ff9f43"/>
+          <use href="#cat" x="145" y="60" width="120" height="120" style="color:#8a8fa8"/>
+          <use href="#cat" x="255" y="84" width="110" height="110" style="color:#2b2541"/>
+          <rect x="0" y="190" width="400" height="30" fill="#ffb3cb"/>
+          <text x="200" y="210" font-family="Manrope" font-weight="800" font-size="13" fill="#16122e" text-anchor="middle">ТАТО САНЯ ★ НАЙКРАЩИЙ</text>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: муркотливий</span>
+          <h3>Особистий опікун 342 котів</h3>
+          <p>Кожен кіт отримує від Сані листівку на день народження. Навіть ті, що його подряпали. Особливо ті. Коти Європи одноголосно визнали його почесним котом — перша людина в історії.</p>
+        </div>
+      </article>
+
+      <!-- 5. Хом'ячки -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Хом'ячок у спа з рушником на голові">
+          <rect width="400" height="220" fill="#fff1c9"/>
+          <g transform="translate(300 110)" stroke="#c4a35a" stroke-width="6" fill="none">
+            <circle r="70"/><path d="M-70 0 H70 M0 -70 V70 M-50 -50 L50 50 M50 -50 L-50 50" stroke-width="3"/>
+          </g>
+          <path d="M80 40 q8 -10 0 -20 M100 40 q8 -10 0 -20 M120 40 q8 -10 0 -20" stroke="#c4a35a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <ellipse cx="150" cy="190" rx="110" ry="18" fill="#7fd6c2"/>
+          <g transform="translate(150 130)">
+            <ellipse rx="66" ry="56" fill="#f3a35b"/>
+            <ellipse cy="20" rx="42" ry="32" fill="#ffe1bd"/>
+            <circle cx="-44" cy="8" r="20" fill="#ffc28a"/><circle cx="44" cy="8" r="20" fill="#ffc28a"/>
+            <circle cx="-20" cy="-12" r="9" fill="#29c48a" stroke="#1d9b6c" stroke-width="2"/><circle cx="20" cy="-12" r="9" fill="#29c48a" stroke="#1d9b6c" stroke-width="2"/>
+            <ellipse cy="4" rx="5" ry="3.5" fill="#ff4f8b"/>
+            <path d="M-6 10 Q0 16 6 10" stroke="#16122e" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M-56 -36 Q0 -86 56 -36 Q40 -52 0 -52 Q-40 -52 -56 -36Z" fill="#fff" stroke="#ffb3cb" stroke-width="4"/>
+            <path d="M-40 -48 Q0 -70 40 -48" stroke="#ffb3cb" stroke-width="4" fill="none"/>
+          </g>
+          <text x="300" y="116" font-family="Unbounded" font-weight="900" font-size="15" fill="#c4a35a" text-anchor="middle">SPA</text>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: пухнастий</span>
+          <h3>Відкрив перший у світі спа-центр для хом'ячків</h3>
+          <p>Колесо з підігрівом, масаж щічок, огірочки на очі і групова медитація «Я не мушу нікуди бігти». Хом'ячок Валерій вперше за життя виспався і плакав від щастя.</p>
+        </div>
+      </article>
+
+      <!-- 6. Тхори -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Два тхори обіймаються">
+          <rect width="400" height="220" fill="#e3f7e9"/>
+          <path d="M200 46 c-10-16-36-6-22 14 l22 20 22-20 c14-20-12-30-22-14z" fill="#ff4f8b"/>
+          <path d="M30 200 Q70 120 150 140 Q175 146 185 128" fill="none" stroke="#9a6a3e" stroke-width="36" stroke-linecap="round"/>
+          <path d="M370 200 Q330 120 250 140 Q225 146 215 128" fill="none" stroke="#e9dcc6" stroke-width="36" stroke-linecap="round"/>
+          <g transform="translate(180 116)"><circle r="24" fill="#f1e6d6"/><path d="M-22 -2 Q0 -14 22 -2 Q0 8 -22 -2Z" fill="#4a3220"/><circle cx="-8" cy="-3" r="3.5" fill="#fff"/><circle cx="8" cy="-3" r="3.5" fill="#fff"/><circle cy="10" r="3.5" fill="#ff4f8b"/><circle cx="-16" cy="-20" r="7" fill="#9a6a3e"/><circle cx="16" cy="-20" r="7" fill="#9a6a3e"/></g>
+          <g transform="translate(222 116)"><circle r="24" fill="#fff"/><path d="M-22 -2 Q0 -14 22 -2 Q0 8 -22 -2Z" fill="#8a7a66"/><circle cx="-8" cy="-3" r="3.5" fill="#fff"/><circle cx="8" cy="-3" r="3.5" fill="#fff"/><circle cy="10" r="3.5" fill="#ff4f8b"/><circle cx="-16" cy="-20" r="7" fill="#e9dcc6"/><circle cx="16" cy="-20" r="7" fill="#e9dcc6"/></g>
+          <text x="200" y="210" font-family="Manrope" font-weight="800" font-size="13" fill="#1d9b6c" text-anchor="middle">МИРНИЙ ДОГОВІР №1 ✍ САНЯ</text>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: дипломатичний</span>
+          <h3>Помирив дві ворогуючі родини тхорів</h3>
+          <p>Переговори тривали дев'ять годин. Саня просто спокійно сидів, пив чай і вдумливо мовчав. На десятій годині тхори не витримали — обійнялись і попросили вибачення. Навіть одне в одного.</p>
+        </div>
+      </article>
+
+      <!-- 7. Грета -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Усміхнена планета і контейнери для сортування сміття">
+          <rect width="400" height="220" fill="#dff5ff"/>
+          <circle cx="120" cy="100" r="70" fill="#2b6cff"/>
+          <path d="M80 60 q20 -14 40 0 q10 20 -8 30 q-24 6 -32 -10z M130 110 q22 -6 34 10 q2 22 -20 28 q-20 -8 -14 -38z M70 120 q14 4 12 20 q-14 4 -18 -8z" fill="#29c48a"/>
+          <circle cx="98" cy="92" r="6" fill="#16122e"/><circle cx="142" cy="92" r="6" fill="#16122e"/>
+          <path d="M96 116 Q120 138 144 116" stroke="#16122e" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <circle cx="86" cy="110" r="7" fill="#ff8fb5" opacity=".7"/><circle cx="154" cy="110" r="7" fill="#ff8fb5" opacity=".7"/>
+          <g font-family="Manrope" font-weight="900" font-size="18" fill="#fff" text-anchor="middle">
+            <rect x="230" y="130" width="34" height="56" rx="4" fill="#ffc83d"/><text x="247" y="165">♻</text>
+            <rect x="270" y="130" width="34" height="56" rx="4" fill="#29c48a"/><text x="287" y="165">♻</text>
+            <rect x="310" y="130" width="34" height="56" rx="4" fill="#2b6cff"/><text x="327" y="165">♻</text>
+            <rect x="350" y="130" width="34" height="56" rx="4" fill="#ff4f8b"/><text x="367" y="165">♻</text>
+          </g>
+          <g transform="translate(230 30)">
+            <rect width="156" height="60" rx="14" fill="#fff" stroke="#16122e" stroke-width="2"/>
+            <path d="M30 60 L24 76 L46 60" fill="#fff" stroke="#16122e" stroke-width="2" stroke-linejoin="round"/>
+            <rect x="26" y="58" width="22" height="4" fill="#fff"/>
+            <text x="78" y="26" font-family="Manrope" font-weight="800" font-size="13" fill="#16122e" text-anchor="middle">How dare you</text>
+            <text x="78" y="44" font-family="Manrope" font-weight="800" font-size="13" fill="#ff4f8b" text-anchor="middle">be so good?!</text>
+          </g>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: планетарний</span>
+          <h3>Врятував Грету Тунберг</h3>
+          <p>Від поганого настрою. Показав, як сортує сміття: на 14 контейнерів — за кольором, матеріалом і настроєм. Грета вперше в житті посміхнулась і сказала: «How dare you be so good?»</p>
+        </div>
+      </article>
+
+      <!-- 8. Благодійність -->
+      <article class="ach reveal">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Шоколадка, розломлена навпіл, і серце">
+          <rect width="400" height="220" fill="#ffe9d6"/>
+          <g transform="translate(70 70) rotate(-10)">
+            <rect width="110" height="80" rx="6" fill="#6b3b1f"/>
+            <path d="M37 0 V80 M73 0 V80 M0 40 H110" stroke="#4e2a14" stroke-width="3"/>
+            <rect x="-6" y="40" width="122" height="46" rx="4" fill="#ff4f8b"/>
+            <text x="55" y="70" font-family="Unbounded" font-weight="900" font-size="14" fill="#fff" text-anchor="middle">ОСТАННЯ</text>
+          </g>
+          <g transform="translate(225 70) rotate(10)">
+            <rect width="110" height="80" rx="6" fill="#6b3b1f"/>
+            <path d="M37 0 V80 M73 0 V80 M0 40 H110" stroke="#4e2a14" stroke-width="3"/>
+            <rect x="-6" y="40" width="122" height="46" rx="4" fill="#ff4f8b"/>
+            <text x="55" y="70" font-family="Unbounded" font-weight="900" font-size="14" fill="#fff" text-anchor="middle">ОСТАННЯ</text>
+          </g>
+          <path d="M200 60 c-12-18-42-6-26 16 l26 24 26-24 c16-22-14-34-26-16z" fill="#ff4f8b" stroke="#16122e" stroke-width="2"/>
+          <g fill="#ffc83d"><path d="M60 40 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/><path d="M340 170 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/></g>
+          <text x="200" y="200" font-family="Manrope" font-weight="800" font-size="13" fill="#16122e" text-anchor="middle">ОДНА Й ТА САМА. ДВІЧІ. ЯК?!</text>
+        </svg>
+        <div class="ach-body">
+          <span class="lvl">Рівень: благодійний</span>
+          <h3>Благодійник світового рівня</h3>
+          <p>Віддав останню шоколадку. Двічі. Одну й ту саму. Вчені досі не розуміють, як це працює, але підозрюють, що доброта Сані порушує закон збереження маси.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUITS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Гардероб героя</span>
+    <h2 class="h2">Саня на службі людству</h2>
+    <p class="lead">Одна людина — тисяча професій. Тут лише ті, у яких його встигли сфотографувати. Так, це справжні фото. Майже.</p>
+    <div class="suits">
+
+      <!-- Космонавт -->
+      <article class="suit reveal">
+        <svg viewBox="0 0 300 340" role="img" aria-label="Саня в скафандрі космонавта">
+          <rect width="300" height="340" fill="#1d1650"/>
+          <g fill="#fff"><circle cx="30" cy="40" r="1.5"/><circle cx="90" cy="20" r="1"/><circle cx="260" cy="150" r="1.4"/><circle cx="280" cy="250" r="1"/><circle cx="20" cy="170" r="1.2"/><circle cx="60" cy="110" r="1"/></g>
+          <circle cx="20" cy="330" r="80" fill="#2b6cff"/><path d="M-10 280 q30 -20 50 4 q-6 26 -30 22z M40 320 q20 -8 34 8 q-10 16 -30 10z" fill="#29c48a"/>
+          <rect x="132" y="166" width="36" height="26" fill="#e8b893"/>
+          <path d="M50 340 L56 250 Q62 196 150 188 Q238 196 244 250 L250 340Z" fill="#eef1f8" stroke="#16122e" stroke-width="3"/>
+          <rect x="118" y="236" width="64" height="44" rx="6" fill="#d9dde8" stroke="#16122e" stroke-width="2"/>
+          <circle cx="134" cy="252" r="5" fill="#ff4f8b"/><circle cx="150" cy="252" r="5" fill="#ffc83d"/><circle cx="166" cy="252" r="5" fill="#29c48a"/><rect x="128" y="264" width="44" height="6" rx="3" fill="#2b6cff"/>
+          <g transform="translate(72 226)"><rect width="34" height="22" rx="3" fill="#2b6cff" stroke="#16122e" stroke-width="2"/><rect x="1" y="11" width="32" height="10" fill="#ffc83d"/></g>
+          <rect x="192" y="228" width="46" height="18" rx="3" fill="#ff4f8b"/><text x="215" y="241" font-family="Unbounded" font-weight="900" font-size="10" fill="#fff" text-anchor="middle">САНЯ</text>
+          <g class="head">
+            <image href="img/face-1.jpg" x="92" y="48" width="116" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+            <ellipse cx="150" cy="112" rx="58" ry="64" fill="none" stroke="#16122e" stroke-width="3"/>
+            <circle cx="150" cy="114" r="86" fill="#bfe0ff" fill-opacity=".16" stroke="#e7ebf3" stroke-width="10"/>
+            <path d="M92 70 Q114 42 156 36" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" opacity=".75"/>
+          </g>
+          <ellipse cx="150" cy="198" rx="70" ry="14" fill="#c9ced9" stroke="#16122e" stroke-width="3"/>
+          <g transform="translate(226 26) rotate(14 28 28)"><use href="#cat" width="56" height="56" style="color:#ff9f43"/><circle cx="28" cy="32" r="31" fill="#bfe0ff" fill-opacity=".2" stroke="#e7ebf3" stroke-width="3"/></g>
+        </svg>
+        <div class="suit-body">
+          <h3>🚀 Космонавт Саня</h3>
+          <p>Скафандр одягнув із ввічливості, щоб інші космонавти не ніяковіли. Насправді в космосі він дихає спокоєм. Кіт полетів зі ним добровільно.</p>
+        </div>
+      </article>
+
+      <!-- Медсестра -->
+      <article class="suit reveal">
+        <svg viewBox="0 0 300 340" role="img" aria-label="Саня в костюмі медсестри">
+          <rect width="300" height="340" fill="#dff1ff"/>
+          <g transform="translate(236 110)" fill="#ff4f8b" opacity=".22"><rect x="16" width="18" height="50"/><rect y="16" width="50" height="18"/></g>
+          <rect x="132" y="166" width="36" height="26" fill="#e8b893"/>
+          <path d="M50 340 L56 250 Q62 196 150 188 Q238 196 244 250 L250 340Z" fill="#fff" stroke="#16122e" stroke-width="3"/>
+          <path d="M120 194 L150 236 L180 194" fill="none" stroke="#ff8fb5" stroke-width="8" stroke-linejoin="round"/>
+          <rect x="178" y="262" width="36" height="32" rx="3" fill="#fff" stroke="#16122e" stroke-width="2"/>
+          <rect x="186" y="248" width="5" height="20" fill="#2b6cff"/><rect x="196" y="252" width="5" height="16" fill="#ff4f8b"/>
+          <g fill="#ff4f8b"><rect x="98" y="244" width="6" height="18"/><rect x="92" y="250" width="18" height="6"/></g>
+          <path d="M112 196 Q104 252 142 262 M188 196 Q196 252 158 262 M142 262 Q150 266 158 262 M150 264 L150 288" stroke="#16122e" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="150" cy="296" r="10" fill="#c9ced9" stroke="#16122e" stroke-width="3"/>
+          <g class="head">
+            <image href="img/face-3.jpg" x="92" y="48" width="116" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+            <ellipse cx="150" cy="112" rx="58" ry="64" fill="none" stroke="#16122e" stroke-width="3"/>
+            <path d="M102 74 L112 34 L188 34 L198 74 Q150 62 102 74Z" fill="#fff" stroke="#16122e" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="144" y="38" width="12" height="26" fill="#ff4f8b"/><rect x="137" y="45" width="26" height="12" fill="#ff4f8b"/>
+          </g>
+          <g transform="translate(232 196) rotate(-28)">
+            <rect x="9" y="-26" width="6" height="22" fill="#c9ced9" stroke="#16122e" stroke-width="2"/>
+            <rect x="-4" y="-6" width="32" height="8" rx="2" fill="#c9ced9" stroke="#16122e" stroke-width="2"/>
+            <rect x="0" y="2" width="24" height="72" rx="3" fill="#e7f6ff" stroke="#16122e" stroke-width="3"/>
+            <rect x="2" y="34" width="20" height="38" fill="#7fd6c2"/>
+            <path d="M12 74 V98" stroke="#16122e" stroke-width="2"/>
+          </g>
+          <circle cx="244" cy="268" r="14" fill="#e8b893" stroke="#16122e" stroke-width="2"/>
+          <g transform="translate(12 16)"><rect width="104" height="46" rx="12" fill="#fff" stroke="#16122e" stroke-width="2"/><path d="M80 46 L92 60 L92 46" fill="#fff" stroke="#16122e" stroke-width="2" stroke-linejoin="round"/><rect x="80" y="43" width="11" height="5" fill="#fff"/>
+            <text x="52" y="20" font-family="Manrope" font-weight="800" font-size="12" fill="#16122e" text-anchor="middle">Вдихніть…</text>
+            <text x="52" y="36" font-family="Manrope" font-weight="800" font-size="12" fill="#ff4f8b" text-anchor="middle">і спокійно 😌</text></g>
+        </svg>
+        <div class="suit-body">
+          <h3>💉 Медсестра Саня</h3>
+          <p>Робить уколи так ніжно, що пацієнти записуються ще раз — просто щоб поспілкуватись. Температуру міряє поглядом. Похибка — нуль.</p>
+        </div>
+      </article>
+
+      <!-- Поліцейський -->
+      <article class="suit reveal">
+        <svg viewBox="0 0 300 340" role="img" aria-label="Саня в формі поліцейського з котиком">
+          <rect width="300" height="340" fill="#cfe0ff"/>
+          <g fill="#a9c1ee"><rect x="0" y="150" width="46" height="190"/><rect x="36" y="104" width="40" height="236"/><rect x="232" y="126" width="38" height="214"/><rect x="262" y="172" width="38" height="168"/></g>
+          <g fill="#ffe9a8"><rect x="46" y="118" width="8" height="10"/><rect x="60" y="118" width="8" height="10"/><rect x="46" y="138" width="8" height="10"/><rect x="242" y="140" width="8" height="10"/><rect x="256" y="160" width="8" height="10"/></g>
+          <rect x="132" y="166" width="36" height="26" fill="#e8b893"/>
+          <path d="M50 340 L56 250 Q62 196 150 188 Q238 196 244 250 L250 340Z" fill="#1f2d5c" stroke="#16122e" stroke-width="3"/>
+          <path d="M122 192 L150 224 L178 192" fill="#cfe0ff" stroke="#16122e" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M146 222 L154 222 L158 274 L150 284 L142 274Z" fill="#16122e"/>
+          <path d="M108 236 l5 11 12 1 -9 8 3 12 -11 -6 -11 6 3 -12 -9 -8 12 -1z" fill="#ffc83d" stroke="#16122e" stroke-width="1.5"/>
+          <rect x="172" y="238" width="46" height="14" rx="2" fill="#ffc83d"/><text x="195" y="249" font-family="Unbounded" font-weight="900" font-size="9" fill="#16122e" text-anchor="middle">САНЯ</text>
+          <g class="head">
+            <image href="img/face-4.jpg" x="92" y="48" width="116" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+            <ellipse cx="150" cy="112" rx="58" ry="64" fill="none" stroke="#16122e" stroke-width="3"/>
+            <path d="M88 78 Q82 40 104 26 L196 26 Q218 40 212 78Z" fill="#1f2d5c" stroke="#16122e" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="89" y="64" width="122" height="13" fill="#16122e"/>
+            <path d="M92 78 Q150 100 208 78 Q150 90 92 78Z" fill="#16122e" stroke="#16122e" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="150" cy="46" r="11" fill="#ffc83d" stroke="#16122e" stroke-width="2"/>
+          </g>
+          <use href="#cat" x="34" y="244" width="70" height="70" style="color:#ff9f43"/>
+          <circle cx="56" cy="304" r="13" fill="#e8b893" stroke="#16122e" stroke-width="2"/><circle cx="90" cy="306" r="13" fill="#e8b893" stroke="#16122e" stroke-width="2"/>
+          <g transform="translate(200 262) rotate(8)">
+            <rect x="-6" width="94" height="62" rx="4" fill="#fff" stroke="#16122e" stroke-width="2"/>
+            <text x="41" y="17" font-family="Unbounded" font-weight="900" font-size="10" fill="#16122e" text-anchor="middle">ШТРАФ</text>
+            <text x="41" y="33" font-family="Manrope" font-weight="700" font-size="8.5" fill="#46415f" text-anchor="middle">замало посмішок</text>
+            <text x="41" y="50" font-family="Manrope" font-weight="800" font-size="9" fill="#ff4f8b" text-anchor="middle">сплатити: 😊😊😊</text>
+          </g>
+        </svg>
+        <div class="suit-body">
+          <h3>🚓 Поліцейський Саня</h3>
+          <p>Виписує штрафи тільки за одне порушення — замало посмішок. Окуляри носить, щоб порушники не розтанули від його доброго погляду. Котик — його напарник.</p>
+        </div>
+      </article>
+
+      <!-- Пожежник -->
+      <article class="suit reveal">
+        <svg viewBox="0 0 300 340" role="img" aria-label="Саня в шоломі пожежника з врятованим котом">
+          <defs><linearGradient id="fire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ff6a3d"/></linearGradient></defs>
+          <rect width="300" height="340" fill="url(#fire)"/>
+          <path d="M0 340 V290 Q14 250 28 286 Q36 230 56 280 Q66 256 76 290 V340Z M224 340 V292 Q236 240 250 284 Q262 226 276 280 Q290 252 300 270 V340Z" fill="#ff4f3d"/>
+          <path d="M10 340 Q20 300 30 318 Q40 290 52 320 L60 340Z M236 340 Q248 300 258 318 Q268 290 282 322 L290 340Z" fill="#ffc83d"/>
+          <rect x="132" y="166" width="36" height="26" fill="#e8b893"/>
+          <path d="M50 340 L56 250 Q62 196 150 188 Q238 196 244 250 L250 340Z" fill="#2d2f45" stroke="#16122e" stroke-width="3"/>
+          <path d="M104 198 L98 340 M196 198 L202 340" stroke="#ffc83d" stroke-width="10"/>
+          <path d="M53 292 H247" stroke="#ffc83d" stroke-width="10"/><path d="M53 304 H248" stroke="#d9dde8" stroke-width="5"/>
+          <g class="head">
+            <image href="img/face-2.jpg" x="92" y="48" width="116" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+            <ellipse cx="150" cy="112" rx="58" ry="64" fill="none" stroke="#16122e" stroke-width="3"/>
+            <path d="M86 84 Q86 20 150 18 Q214 20 214 84Z" fill="#e8312f" stroke="#16122e" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M150 20 V82" stroke="#b81f1d" stroke-width="7"/>
+            <path d="M72 84 Q150 104 228 84 L226 92 Q150 114 74 92Z" fill="#c42523" stroke="#16122e" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M136 42 H164 V60 Q150 74 136 60Z" fill="#ffc83d" stroke="#16122e" stroke-width="2"/>
+          </g>
+          <path d="M18 340 Q30 270 70 262" stroke="#16122e" stroke-width="16" fill="none" stroke-linecap="round"/>
+          <path d="M18 340 Q30 270 70 262" stroke="#8a8fa8" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <circle cx="76" cy="262" r="13" fill="#e8b893" stroke="#16122e" stroke-width="2"/>
+          <use href="#cat" x="196" y="202" width="78" height="78" style="color:#8a8fa8"/>
+          <circle cx="230" cy="282" r="13" fill="#e8b893" stroke="#16122e" stroke-width="2"/>
+          <text x="236" y="196" font-family="Manrope" font-weight="800" font-size="13" fill="#16122e" text-anchor="middle">дякую 🥹</text>
+        </svg>
+        <div class="suit-body">
+          <h3>🚒 Пожежник Саня</h3>
+          <p>Гасить пожежі спокійним поглядом. Шланг носить, щоб колеги не ніяковіли. Кожного кота з дерева знімає особисто і проводить з ним бесіду про безпеку.</p>
+        </div>
+      </article>
+
+      <!-- Зоолог у савані -->
+      <article class="suit reveal">
+        <svg viewBox="0 0 300 340" role="img" aria-label="Саня-зоолог в африканській савані з левеням і жирафом">
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#ffab5c"/></linearGradient></defs>
+          <rect width="300" height="340" fill="url(#sky)"/>
+          <circle cx="58" cy="60" r="32" fill="#fff1c9"/>
+          <path d="M40 270 Q44 200 36 160 M36 160 Q30 140 18 132 M36 160 Q48 140 62 134" stroke="#5a3b22" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <ellipse cx="40" cy="128" rx="48" ry="14" fill="#6d8b3a"/>
+          <path d="M300 340 L300 150 Q290 110 276 80 L262 90 Q276 120 270 150 L262 340Z" fill="#ffc83d" stroke="#16122e" stroke-width="2"/>
+          <g fill="#c9822f"><circle cx="282" cy="180" r="6"/><circle cx="276" cy="220" r="7"/><circle cx="288" cy="256" r="6"/><circle cx="278" cy="120" r="5"/></g>
+          <ellipse cx="268" cy="76" rx="20" ry="12" fill="#ffc83d" stroke="#16122e" stroke-width="2" transform="rotate(-20 268 76)"/>
+          <circle cx="262" cy="70" r="3" fill="#16122e"/><path d="M276 62 l2 -12 M284 66 l4 -11" stroke="#16122e" stroke-width="3" stroke-linecap="round"/>
+          <rect x="0" y="282" width="300" height="58" fill="#d9a441"/>
+          <path d="M0 282 l8 -12 l6 12 l10 -14 l6 14 l12 -10 l4 10" stroke="#b5832a" stroke-width="2" fill="none"/>
+          <rect x="132" y="166" width="36" height="26" fill="#e8b893"/>
+          <path d="M50 340 L56 250 Q62 196 150 188 Q238 196 244 250 L250 340Z" fill="#c8b27a" stroke="#16122e" stroke-width="3"/>
+          <path d="M122 192 L150 216 L178 192" fill="#b39b62" stroke="#16122e" stroke-width="2" stroke-linejoin="round"/>
+          <rect x="76" y="268" width="40" height="36" rx="3" fill="#b39b62" stroke="#16122e" stroke-width="2"/><rect x="184" y="268" width="40" height="36" rx="3" fill="#b39b62" stroke="#16122e" stroke-width="2"/>
+          <path d="M116 196 Q132 236 132 236 M184 196 Q168 236 168 236" stroke="#5a3b22" stroke-width="3" fill="none"/>
+          <rect x="124" y="232" width="22" height="34" rx="6" fill="#16122e"/><rect x="154" y="232" width="22" height="34" rx="6" fill="#16122e"/><rect x="144" y="240" width="12" height="10" fill="#16122e"/>
+          <circle cx="135" cy="264" r="7" fill="#7fb5ff"/><circle cx="165" cy="264" r="7" fill="#7fb5ff"/>
+          <g class="head">
+            <image href="img/face-3.jpg" x="92" y="48" width="116" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+            <ellipse cx="150" cy="112" rx="58" ry="64" fill="none" stroke="#16122e" stroke-width="3"/>
+            <path d="M88 82 Q90 18 150 16 Q210 18 212 82Z" fill="#efe2bd" stroke="#16122e" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="89" y="66" width="122" height="12" fill="#8b6a3a"/>
+            <ellipse cx="150" cy="84" rx="86" ry="11" fill="#e4d4a8" stroke="#16122e" stroke-width="2"/>
+          </g>
+          <g transform="translate(40 300)">
+            <circle r="28" fill="#e08a2e" stroke="#16122e" stroke-width="2"/>
+            <circle r="18" fill="#ffc860"/>
+            <circle cx="-6" cy="-3" r="2.6" fill="#16122e"/><circle cx="6" cy="-3" r="2.6" fill="#16122e"/>
+            <path d="M-4 5 L4 5 L0 9Z" fill="#7a3d18"/><path d="M0 9 Q-4 13 -7 11 M0 9 Q4 13 7 11" stroke="#16122e" stroke-width="1.4" fill="none"/>
+          </g>
+          <text x="96" y="252" font-family="Manrope" font-weight="800" font-size="11" fill="#16122e" text-anchor="end">ом-м-м…</text>
+        </svg>
+        <div class="suit-body">
+          <h3>🦁 Зоолог Саня в африканській савані</h3>
+          <p>Леви приходять до нього на сеанси медитації, а жирафи — порадитись щодо життя (здалеку видно, але все одно незрозуміло). Він вислуховує всіх. Навіть гієн.</p>
+        </div>
+      </article>
+
+      <!-- Благодійник -->
+      <article class="suit reveal">
+        <svg viewBox="0 0 300 340" role="img" aria-label="Саня-благодійник у смокінгу з великим сертифікатом">
+          <rect width="300" height="340" fill="#ffe9d6"/>
+          <g><rect x="30" y="40" width="10" height="5" fill="#ff4f8b" transform="rotate(30 35 42)"/><rect x="250" y="30" width="10" height="5" fill="#2b6cff" transform="rotate(-20 255 32)"/><rect x="260" y="120" width="10" height="5" fill="#29c48a" transform="rotate(50 265 122)"/><rect x="24" y="150" width="10" height="5" fill="#ffc83d" transform="rotate(-40 29 152)"/><rect x="60" y="96" width="8" height="4" fill="#2b6cff"/><rect x="230" y="80" width="8" height="4" fill="#ff4f8b"/></g>
+          <rect x="132" y="166" width="36" height="26" fill="#e8b893"/>
+          <path d="M50 340 L56 250 Q62 196 150 188 Q238 196 244 250 L250 340Z" fill="#16122e" stroke="#16122e" stroke-width="3"/>
+          <path d="M122 192 L150 256 L178 192Z" fill="#fff"/>
+          <path d="M122 192 L140 250 L112 214Z M178 192 L160 250 L188 214Z" fill="#2d2f45"/>
+          <path d="M134 192 L150 200 L134 208Z M166 192 L150 200 L166 208Z" fill="#ff4f8b"/><circle cx="150" cy="200" r="4" fill="#ff4f8b"/>
+          <g class="head">
+            <image href="img/face-1.jpg" x="92" y="48" width="116" height="128" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)"/>
+            <ellipse cx="150" cy="112" rx="58" ry="64" fill="none" stroke="#16122e" stroke-width="3"/>
+            <rect x="112" y="4" width="76" height="52" fill="#16122e"/>
+            <rect x="112" y="40" width="76" height="10" fill="#ff4f8b"/>
+            <ellipse cx="150" cy="58" rx="60" ry="9" fill="#16122e"/>
+          </g>
+          <g transform="translate(24 248) rotate(-4)">
+            <rect width="252" height="80" rx="6" fill="#fff" stroke="#16122e" stroke-width="3"/>
+            <rect x="6" y="6" width="240" height="68" rx="3" fill="none" stroke="#ffc83d" stroke-width="2" stroke-dasharray="4 3"/>
+            <text x="126" y="24" font-family="Manrope" font-weight="800" font-size="10" fill="#6b6788" text-anchor="middle" letter-spacing="1">СЕРТИФІКАТ ДОБРОТИ</text>
+            <text x="126" y="50" font-family="Unbounded" font-weight="900" font-size="15" fill="#ff4f8b" text-anchor="middle">1 000 000 обіймів</text>
+            <text x="238" y="68" font-family="Manrope" font-style="italic" font-weight="700" font-size="10" fill="#16122e" text-anchor="end">підпис: Саня ✍</text>
+          </g>
+          <circle cx="30" cy="290" r="14" fill="#e8b893" stroke="#16122e" stroke-width="2"/><circle cx="270" cy="276" r="14" fill="#e8b893" stroke="#16122e" stroke-width="2"/>
+        </svg>
+        <div class="suit-body">
+          <h3>💛 Благодійник Саня</h3>
+          <p>Вручає сертифікат на мільйон обіймів. Термін дії — безстроковий. Обійми не обмінюються і не повертаються, але передаються друзям.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= POWERS ================= -->
+<section class="dark">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold)">Суперсили</span>
+    <h2 class="h2">Три суперсили Сані</h2>
+    <p class="lead">Учені з усього світу намагались їх виміряти. Прилади не витримали.</p>
+    <div class="powers">
+      <div class="power reveal">
+        <div class="ico">🧘</div>
+        <h3>Спокійний</h3>
+        <div class="meter"><i></i></div>
+        <div class="meter-lbl"><span>Рівень спокою</span><b>146%</b></div>
+        <p>Коли поруч вибухнув феєрверк, Саня сказав: «Гарно» — і продовжив пити чай. Говерла приїжджала до нього вчитись незворушності.</p>
+      </div>
+      <div class="power reveal">
+        <div class="ico">💪</div>
+        <h3>Сильний</h3>
+        <div class="meter"><i></i></div>
+        <div class="meter-lbl"><span>Рівень сили</span><b>212%</b></div>
+        <p>Заніс холодильник на дев'ятий поверх. Сам. Бо ліфт попросив вихідний, і Саня не зміг йому відмовити.</p>
+      </div>
+      <div class="power reveal">
+        <div class="ico">🤔</div>
+        <h3>Вдумливий</h3>
+        <div class="meter"><i></i></div>
+        <div class="meter-lbl"><span>Рівень вдумливості</span><b>999%</b></div>
+        <p>Одного разу задумався так глибоко, що Wi‑Fi у кімнаті почав ловити краще. Сусіди тепер просять його думати частіше.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Секретний архів</span>
+    <h2 class="h2">Саня в дії</h2>
+    <p class="lead">Рідкісні кадри, які вдалося зробити, поки Саня не помітив. Папараці ризикували життям (ні, Саня ж спокійний).</p>
+    <div class="gallery">
+      <figure class="shot reveal" style="--r:-3deg;margin:0">
+        <img src="img/thinker.jpg" alt="Саша Олійник задумливо дивиться в камеру" loading="lazy">
+        <figcaption><b>Вдумливість</b>Тут Саня вирішує, чи рятувати світ зараз, чи після кави. Відповідь: зараз. І після кави теж.</figcaption>
+      </figure>
+      <figure class="shot reveal" style="--r:2deg;margin:0">
+        <img src="img/strong.jpg" alt="Саша Олійник зі схрещеними руками" loading="lazy">
+        <figcaption><b>Сила</b>Руки схрещені з міркувань безпеки: інакше він випадково підніме будівлю. Годинник показує час до наступного подвигу.</figcaption>
+      </figure>
+      <figure class="shot reveal" style="--r:-2deg;margin:0">
+        <img src="img/explorer.jpg" alt="Саша Олійник з фотоапаратом і рюкзаком" loading="lazy">
+        <figcaption><b>Експедиція</b>Шукає котів, яких ще не врятував. Фотоапарат — щоб NASA повірила. Окуляри — щоб не засліпити нас своєю добротою.</figcaption>
+      </figure>
+      <figure class="shot reveal" style="--r:3deg;margin:0">
+        <img src="img/iss.jpg" alt="Розмитий кадр з відеодзвінка" loading="lazy">
+        <figcaption><b>Сеанс зв'язку з МКС</b>Єдиний кадр з орбіти. Якість жахлива: Wi‑Fi у космосі ще гірший, ніж у маршрутці.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Біографія</span>
+    <h2 class="h2">Шлях легенди</h2>
+    <p class="lead">Коротко, бо повна версія не влізла у три томи.</p>
+    <div class="timeline">
+      <div class="tl reveal" data-i="👶"><h3>День перший</h3><p>Народився і одразу заспокоїв усю пологову. Лікарі плакали від спокою.</p></div>
+      <div class="tl reveal" data-i="🐕"><h3>5 років</h3><p>Навчив сусідського пса команди «сидіти». Пес досі сидить. Чекає, поки Саня скаже «можна».</p></div>
+      <div class="tl reveal" data-i="♟️"><h3>12 років</h3><p>Виграв у шахи в комп'ютера. Комп'ютер попросив реванш, а потім — психолога.</p></div>
+      <div class="tl reveal" data-i="🛟"><h3>18 років</h3><p>Отримав посвідчення рятувальника. І ще одне — на випадок, якщо перше хтось захоче врятувати.</p></div>
+      <div class="tl reveal" data-i="🚀"><h3>Пізніше</h3><p>Злітав у космос, пірнув на дно океану, помирив тхорів. Усе — за один вівторок.</p></div>
+      <div class="tl reveal" data-i="😌"><h3>Сьогодні</h3><p>Скромно робить вигляд, що цього сайту не існує. Але ми знаємо: він натиснув «Посміхнути Саню».</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Відгуки</span>
+    <h2 class="h2">Що кажуть про Саню</h2>
+    <p class="lead">Ми опитали всіх, кого він врятував. Опитування триває досі.</p>
+    <div class="reviews">
+      <div class="review reveal"><div class="stars">★★★★★</div><blockquote>«Після нього я вперше відчула себе неглибокою».</blockquote><div class="who"><span>🌊</span><div><b>Маріанська западина</b>11 км досвіду</div></div></div>
+      <div class="review reveal"><div class="stars">★★★★★</div><blockquote>«Він єдиний, хто мене не боїться. І єдиний, кого я поважаю».</blockquote><div class="who"><span>🍎</span><div><b>Гравітація</b>працює з Ньютоном</div></div></div>
+      <div class="review reveal"><div class="stars">★★★★★</div><blockquote>«Мур».</blockquote><div class="who"><span>🐱</span><div><b>Кіт Барсик</b>врятований тричі</div></div></div>
+      <div class="review reveal"><div class="stars">★★★★★</div><blockquote>«Вперше хтось запитав, як МОЇ справи».</blockquote><div class="who"><span>🐹</span><div><b>Хом'ячок Валерій</b>постійний клієнт спа</div></div></div>
+      <div class="review reveal"><div class="stars">★★★★★</div><blockquote>«Я стою спокійно тисячі років, але Саня спокійніший. Заздрю».</blockquote><div class="who"><span>⛰️</span><div><b>Говерла</b>2061 м спокою</div></div></div>
+      <div class="review reveal"><div class="stars">★★★★☆</div><blockquote>«Чудова людина. Одна зірка знята, бо витяг мене, коли я не тонув».</blockquote><div class="who"><span>🦫</span><div><b>Бобер Степан</b>дуже здивований</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Фінал</span>
+    <h2 class="h2">Ти дочитав до кінця. Отже, ти теж обожнюєш Саню</h2>
+    <p class="lead">Не стримуйся. Натисни кнопку. Саня відчує — і спокійно, сильно, вдумливо посміхнеться.</p>
+    <div class="btns">
+      <button class="btn btn-smile" data-smile>😊 Посміхнути Саню</button>
+      <button class="btn btn-love" data-love>❤️ Обожнюю Саню</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Фан-клуб Саші Олійника. Усі факти перевірено його мамою і двома котами.</p>
+    <p>Сайт створено без відома Сані. Він би сказав «та нащо» — спокійно, сильно і вдумливо.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  const store = {
+    get(k){ try { return +localStorage.getItem('sanya_' + k) || 0 } catch { return 0 } },
+    set(k, v){ try { localStorage.setItem('sanya_' + k, v) } catch {} }
+  };
+  const counts = { smile: store.get('smile'), love: store.get('love') };
+  // 1 раз, 2–4 рази, 5+ разів
+  const times = n => {
+    const d = n % 10, dd = n % 100;
+    if (d === 1 && dd !== 11) return 'раз';
+    if (d >= 2 && d <= 4 && (dd < 12 || dd > 14)) return 'рази';
+    return 'разів';
+  };
+  const render = () => {
+    document.querySelectorAll('[data-count]').forEach(el => el.textContent = counts[el.dataset.count].toLocaleString('uk-UA'));
+    document.querySelectorAll('[data-times]').forEach(el => el.textContent = times(counts[el.dataset.times]));
+  };
+  render();
+
+  const pick = a => a[Math.floor(Math.random() * a.length)];
+  const rand = (a, b) => a + Math.random() * (b - a);
+
+  const toast = document.getElementById('toast');
+  let toastT;
+  function showToast(text){
+    toast.textContent = text;
+    toast.classList.add('show');
+    clearTimeout(toastT);
+    toastT = setTimeout(() => toast.classList.remove('show'), 2600);
+  }
+
+  // ---------- Посміхнути Саню ----------
+  const smileLines = [
+    'Саня посміхнувся. Десь розквітнув соняшник 🌻',
+    'Саня посміхнувся. На МКС стало світліше.',
+    'Саня посміхнувся. Хом\'ячок Валерій плаче від щастя.',
+    'Саня посміхнувся. Курс гривні на секунду зміцнів.',
+    'Саня посміхнувся. Бобер Степан повернув зірку.',
+    'Саня посміхнувся. 342 коти муркнули одночасно.',
+    'Саня посміхнувся. Маріанська западина стала на метр мілкішою.',
+    'Саня посміхнувся. Грета Тунберг відчула це зі Швеції.',
+    'Саня посміхнувся спокійно, сильно і вдумливо.'
+  ];
+  const portrait = document.getElementById('portrait');
+  const bubble = document.getElementById('bubble');
+  let bubbleT;
+  const rainEmoji = ['😊','😄','🐱','🐹','🚀','🌻','⭐','💛','🦫','🌊'];
+
+  function smile(){
+    counts.smile++; store.set('smile', counts.smile); render();
+    let line = pick(smileLines);
+    if (counts.smile % 10 === 0) line = `Посмішка №${counts.smile}! Бережіть його щоки 🙏`;
+    bubble.textContent = line;
+    bubble.classList.add('show');
+    clearTimeout(bubbleT);
+    bubbleT = setTimeout(() => bubble.classList.remove('show'), 2600);
+
+    portrait.classList.remove('happy'); void portrait.offsetWidth; portrait.classList.add('happy');
+    setTimeout(() => portrait.classList.remove('happy'), 3000);
+
+    // якщо портрет не на екрані — показуємо текст тостом
+    const r = portrait.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight) showToast(line);
+
+    for (let i = 0; i < 26; i++) {
+      const s = document.createElement('span');
+      s.className = 'fx rain';
+      s.textContent = pick(rainEmoji);
+      s.style.setProperty('--x', rand(0, innerWidth - 30) + 'px');
+      s.style.setProperty('--rot', rand(-360, 360) + 'deg');
+      s.style.animationDuration = rand(1.6, 3) + 's';
+      s.style.animationDelay = rand(0, .6) + 's';
+      s.style.fontSize = rand(22, 40) + 'px';
+      document.body.appendChild(s);
+      s.addEventListener('animationend', () => s.remove());
+    }
+  }
+
+  // ---------- Обожнюю Саню ----------
+  const loveLines = [
+    'Обожнювання зараховано. Саня спокійно кивнув.',
+    'Саня відчув. Трохи зашарівся. Сильно, але вдумливо.',
+    '+1 до карми. Саня поділиться нею з хом\'ячками.',
+    'NASA отримала сигнал: «Саню обожнюють». Підтверджено.',
+    'Десь у світі муркнув врятований кіт.',
+    'Твоє обожнювання доставлено. Без батискафа.'
+  ];
+  function love(e){
+    counts.love++; store.set('love', counts.love); render();
+    showToast(pick(loveLines));
+    const b = e.currentTarget.getBoundingClientRect();
+    const cx = b.left + b.width / 2, cy = b.top;
+    for (let i = 0; i < 16; i++) {
+      const h = document.createElement('span');
+      h.className = 'fx heart';
+      h.textContent = pick(['❤️','💖','💛','💗']);
+      h.style.setProperty('--x', cx - 14 + 'px');
+      h.style.setProperty('--y', cy + 'px');
+      h.style.setProperty('--dx', rand(-140, 140) + 'px');
+      h.style.setProperty('--rot', rand(-60, 60) + 'deg');
+      h.style.animationDelay = rand(0, .25) + 's';
+      document.body.appendChild(h);
+      h.addEventListener('animationend', () => h.remove());
+    }
+  }
+
+  document.querySelectorAll('[data-smile]').forEach(b => b.addEventListener('click', smile));
+  document.querySelectorAll('[data-love]').forEach(b => b.addEventListener('click', love));
+
+  // ---------- Поява при скролі + лічильники ----------
+  const countUp = el => {
+    const to = +el.dataset.to, suf = el.dataset.suf || '', t0 = performance.now(), dur = 1400;
+    const step = t => {
+      const p = Math.min((t - t0) / dur, 1), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
+      el.textContent = v.toLocaleString('uk-UA') + suf;
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    en.target.classList.add('in');
+    en.target.querySelectorAll('[data-to]').forEach(countUp);
+    io.unobserve(en.target);
+  }), { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>
